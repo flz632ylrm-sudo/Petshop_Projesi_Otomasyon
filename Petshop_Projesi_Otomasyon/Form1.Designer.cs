@@ -48,7 +48,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnMusteriIslemleri);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "AnaMenü";
             this.ResumeLayout(false);
 
         }

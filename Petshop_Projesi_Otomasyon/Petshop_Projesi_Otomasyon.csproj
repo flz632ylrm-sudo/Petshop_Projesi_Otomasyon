@@ -80,6 +80,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include=".gitignore" />
     <None Include="Petshop_ProjesiDataSet.xsc">
       <DependentUpon>Petshop_ProjesiDataSet.xsd</DependentUpon>
     </None>

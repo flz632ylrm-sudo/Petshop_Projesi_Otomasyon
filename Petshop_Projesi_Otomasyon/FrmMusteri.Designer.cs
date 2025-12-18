@@ -151,7 +151,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "FrmMusteri";
-            this.Text = "FrmMusteri";
+            this.Text = "MusteriFrm";
             this.ResumeLayout(false);
             this.PerformLayout();
 
