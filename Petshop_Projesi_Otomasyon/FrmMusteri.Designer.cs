@@ -32,13 +32,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtAdsoyad = new System.Windows.Forms.TextBox();
-            this.txtTelefon = new System.Windows.Forms.TextBox();
             this.txtAdres = new System.Windows.Forms.TextBox();
-            this.btnMusteriListele = new System.Windows.Forms.Button();
+            this.btn_select = new System.Windows.Forms.Button();
             this.btnMusteriEkle = new System.Windows.Forms.Button();
-            this.btnMusteriSil = new System.Windows.Forms.Button();
-            this.btnMusteriGuncelle = new System.Windows.Forms.Button();
-            this.btnGeri = new System.Windows.Forms.Button();
+            this.btn_delete = new System.Windows.Forms.Button();
+            this.btn_update = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.maskedTel = new System.Windows.Forms.MaskedTextBox();
+            this.btn_starting_update = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -75,13 +77,6 @@
             this.txtAdsoyad.Size = new System.Drawing.Size(100, 22);
             this.txtAdsoyad.TabIndex = 3;
             // 
-            // txtTelefon
-            // 
-            this.txtTelefon.Location = new System.Drawing.Point(238, 272);
-            this.txtTelefon.Name = "txtTelefon";
-            this.txtTelefon.Size = new System.Drawing.Size(100, 22);
-            this.txtTelefon.TabIndex = 4;
-            // 
             // txtAdres
             // 
             this.txtAdres.Location = new System.Drawing.Point(238, 326);
@@ -89,14 +84,15 @@
             this.txtAdres.Size = new System.Drawing.Size(100, 22);
             this.txtAdres.TabIndex = 5;
             // 
-            // btnMusteriListele
+            // btn_select
             // 
-            this.btnMusteriListele.Location = new System.Drawing.Point(218, 391);
-            this.btnMusteriListele.Name = "btnMusteriListele";
-            this.btnMusteriListele.Size = new System.Drawing.Size(75, 23);
-            this.btnMusteriListele.TabIndex = 6;
-            this.btnMusteriListele.Text = "Listele";
-            this.btnMusteriListele.UseVisualStyleBackColor = true;
+            this.btn_select.Location = new System.Drawing.Point(218, 391);
+            this.btn_select.Name = "btn_select";
+            this.btn_select.Size = new System.Drawing.Size(75, 23);
+            this.btn_select.TabIndex = 6;
+            this.btn_select.Text = "Listele";
+            this.btn_select.UseVisualStyleBackColor = true;
+            this.btn_select.Click += new System.EventHandler(this.btnMusteriListele_Click);
             // 
             // btnMusteriEkle
             // 
@@ -106,52 +102,76 @@
             this.btnMusteriEkle.TabIndex = 7;
             this.btnMusteriEkle.Text = "Ekle";
             this.btnMusteriEkle.UseVisualStyleBackColor = true;
+            this.btnMusteriEkle.Click += new System.EventHandler(this.btnMusteriEkle_Click);
             // 
-            // btnMusteriSil
+            // btn_delete
             // 
-            this.btnMusteriSil.Location = new System.Drawing.Point(495, 391);
-            this.btnMusteriSil.Name = "btnMusteriSil";
-            this.btnMusteriSil.Size = new System.Drawing.Size(75, 23);
-            this.btnMusteriSil.TabIndex = 8;
-            this.btnMusteriSil.Text = "Sil";
-            this.btnMusteriSil.UseVisualStyleBackColor = true;
+            this.btn_delete.Location = new System.Drawing.Point(600, 391);
+            this.btn_delete.Name = "btn_delete";
+            this.btn_delete.Size = new System.Drawing.Size(75, 23);
+            this.btn_delete.TabIndex = 8;
+            this.btn_delete.Text = "Sil";
+            this.btn_delete.UseVisualStyleBackColor = true;
+            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
             // 
-            // btnMusteriGuncelle
+            // btn_update
             // 
-            this.btnMusteriGuncelle.Location = new System.Drawing.Point(368, 391);
-            this.btnMusteriGuncelle.Name = "btnMusteriGuncelle";
-            this.btnMusteriGuncelle.Size = new System.Drawing.Size(75, 23);
-            this.btnMusteriGuncelle.TabIndex = 9;
-            this.btnMusteriGuncelle.Text = "Güncelle";
-            this.btnMusteriGuncelle.UseVisualStyleBackColor = true;
+            this.btn_update.Location = new System.Drawing.Point(337, 391);
+            this.btn_update.Name = "btn_update";
+            this.btn_update.Size = new System.Drawing.Size(75, 23);
+            this.btn_update.TabIndex = 9;
+            this.btn_update.Text = "Güncelle";
+            this.btn_update.UseVisualStyleBackColor = true;
+            this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
             // 
-            // btnGeri
+            // dataGridView1
             // 
-            this.btnGeri.Location = new System.Drawing.Point(608, 391);
-            this.btnGeri.Name = "btnGeri";
-            this.btnGeri.Size = new System.Drawing.Size(75, 23);
-            this.btnGeri.TabIndex = 10;
-            this.btnGeri.Text = "Menü";
-            this.btnGeri.UseVisualStyleBackColor = true;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(776, 193);
+            this.dataGridView1.TabIndex = 11;
+            // 
+            // maskedTel
+            // 
+            this.maskedTel.Location = new System.Drawing.Point(238, 272);
+            this.maskedTel.Mask = "(999) 999 99 99";
+            this.maskedTel.Name = "maskedTel";
+            this.maskedTel.Size = new System.Drawing.Size(129, 22);
+            this.maskedTel.TabIndex = 12;
+            // 
+            // btn_starting_update
+            // 
+            this.btn_starting_update.Location = new System.Drawing.Point(442, 391);
+            this.btn_starting_update.Name = "btn_starting_update";
+            this.btn_starting_update.Size = new System.Drawing.Size(133, 23);
+            this.btn_starting_update.TabIndex = 13;
+            this.btn_starting_update.Text = "Güncelleme Başlat";
+            this.btn_starting_update.UseVisualStyleBackColor = true;
+            this.btn_starting_update.Click += new System.EventHandler(this.btn_starting_update_Click);
             // 
             // FrmMusteri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnGeri);
-            this.Controls.Add(this.btnMusteriGuncelle);
-            this.Controls.Add(this.btnMusteriSil);
+            this.Controls.Add(this.btn_starting_update);
+            this.Controls.Add(this.maskedTel);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.btn_update);
+            this.Controls.Add(this.btn_delete);
             this.Controls.Add(this.btnMusteriEkle);
-            this.Controls.Add(this.btnMusteriListele);
+            this.Controls.Add(this.btn_select);
             this.Controls.Add(this.txtAdres);
-            this.Controls.Add(this.txtTelefon);
             this.Controls.Add(this.txtAdsoyad);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "FrmMusteri";
             this.Text = "MusteriFrm";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -163,12 +183,13 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtAdsoyad;
-        private System.Windows.Forms.TextBox txtTelefon;
         private System.Windows.Forms.TextBox txtAdres;
-        private System.Windows.Forms.Button btnMusteriListele;
+        private System.Windows.Forms.Button btn_select;
         private System.Windows.Forms.Button btnMusteriEkle;
-        private System.Windows.Forms.Button btnMusteriSil;
-        private System.Windows.Forms.Button btnMusteriGuncelle;
-        private System.Windows.Forms.Button btnGeri;
+        private System.Windows.Forms.Button btn_delete;
+        private System.Windows.Forms.Button btn_update;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.MaskedTextBox maskedTel;
+        private System.Windows.Forms.Button btn_starting_update;
     }
 }

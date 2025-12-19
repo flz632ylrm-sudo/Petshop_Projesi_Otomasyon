@@ -34,7 +34,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=10.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.10.0.1\lib\net462\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -81,6 +86,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include=".gitignore" />
+    <None Include="packages.config" />
     <None Include="Petshop_ProjesiDataSet.xsc">
       <DependentUpon>Petshop_ProjesiDataSet.xsd</DependentUpon>
     </None>
