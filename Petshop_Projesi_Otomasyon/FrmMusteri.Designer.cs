@@ -47,49 +47,55 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(99, 222);
+            this.label1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(282, 274);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 16);
+            this.label1.Size = new System.Drawing.Size(80, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Ad Soyad";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(99, 272);
+            this.label2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Location = new System.Drawing.Point(267, 329);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(114, 16);
+            this.label2.Size = new System.Drawing.Size(141, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Telefon Numarası";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(99, 325);
+            this.label3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Location = new System.Drawing.Point(288, 390);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(43, 16);
+            this.label3.Size = new System.Drawing.Size(53, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "Adres";
             // 
             // txtAdsoyad
             // 
-            this.txtAdsoyad.Location = new System.Drawing.Point(238, 222);
+            this.txtAdsoyad.Location = new System.Drawing.Point(426, 274);
             this.txtAdsoyad.Name = "txtAdsoyad";
-            this.txtAdsoyad.Size = new System.Drawing.Size(100, 22);
+            this.txtAdsoyad.Size = new System.Drawing.Size(254, 22);
             this.txtAdsoyad.TabIndex = 3;
             // 
             // txtAdres
             // 
-            this.txtAdres.Location = new System.Drawing.Point(238, 326);
+            this.txtAdres.Location = new System.Drawing.Point(426, 384);
             this.txtAdres.Name = "txtAdres";
-            this.txtAdres.Size = new System.Drawing.Size(100, 22);
+            this.txtAdres.Size = new System.Drawing.Size(254, 22);
             this.txtAdres.TabIndex = 5;
             // 
             // btn_select
             // 
-            this.btn_select.Location = new System.Drawing.Point(163, 391);
+            this.btn_select.Location = new System.Drawing.Point(463, 444);
             this.btn_select.Name = "btn_select";
-            this.btn_select.Size = new System.Drawing.Size(89, 37);
+            this.btn_select.Size = new System.Drawing.Size(110, 53);
             this.btn_select.TabIndex = 6;
             this.btn_select.Text = "Listele";
             this.btn_select.UseVisualStyleBackColor = true;
@@ -97,9 +103,9 @@
             // 
             // btnMusteriEkle
             // 
-            this.btnMusteriEkle.Location = new System.Drawing.Point(42, 391);
+            this.btnMusteriEkle.Location = new System.Drawing.Point(259, 444);
             this.btnMusteriEkle.Name = "btnMusteriEkle";
-            this.btnMusteriEkle.Size = new System.Drawing.Size(86, 37);
+            this.btnMusteriEkle.Size = new System.Drawing.Size(122, 53);
             this.btnMusteriEkle.TabIndex = 7;
             this.btnMusteriEkle.Text = "Ekle";
             this.btnMusteriEkle.UseVisualStyleBackColor = true;
@@ -107,9 +113,9 @@
             // 
             // btn_delete
             // 
-            this.btn_delete.Location = new System.Drawing.Point(565, 391);
+            this.btn_delete.Location = new System.Drawing.Point(1021, 444);
             this.btn_delete.Name = "btn_delete";
-            this.btn_delete.Size = new System.Drawing.Size(83, 37);
+            this.btn_delete.Size = new System.Drawing.Size(109, 53);
             this.btn_delete.TabIndex = 8;
             this.btn_delete.Text = "Sil";
             this.btn_delete.UseVisualStyleBackColor = true;
@@ -117,9 +123,9 @@
             // 
             // btn_update
             // 
-            this.btn_update.Location = new System.Drawing.Point(282, 391);
+            this.btn_update.Location = new System.Drawing.Point(662, 444);
             this.btn_update.Name = "btn_update";
-            this.btn_update.Size = new System.Drawing.Size(85, 37);
+            this.btn_update.Size = new System.Drawing.Size(124, 53);
             this.btn_update.TabIndex = 9;
             this.btn_update.Text = "Güncelle";
             this.btn_update.UseVisualStyleBackColor = true;
@@ -127,27 +133,28 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(175, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(776, 193);
+            this.dataGridView1.Size = new System.Drawing.Size(961, 239);
             this.dataGridView1.TabIndex = 11;
             // 
             // maskedTel
             // 
-            this.maskedTel.Location = new System.Drawing.Point(238, 272);
+            this.maskedTel.Location = new System.Drawing.Point(426, 329);
             this.maskedTel.Mask = "(999) 999 99 99";
             this.maskedTel.Name = "maskedTel";
-            this.maskedTel.Size = new System.Drawing.Size(129, 22);
+            this.maskedTel.Size = new System.Drawing.Size(254, 22);
             this.maskedTel.TabIndex = 12;
             // 
             // btn_starting_update
             // 
-            this.btn_starting_update.Location = new System.Drawing.Point(398, 391);
+            this.btn_starting_update.Location = new System.Drawing.Point(844, 444);
             this.btn_starting_update.Name = "btn_starting_update";
-            this.btn_starting_update.Size = new System.Drawing.Size(133, 37);
+            this.btn_starting_update.Size = new System.Drawing.Size(133, 53);
             this.btn_starting_update.TabIndex = 13;
             this.btn_starting_update.Text = "Güncelleme Başlat";
             this.btn_starting_update.UseVisualStyleBackColor = true;
@@ -155,9 +162,9 @@
             // 
             // btn_back
             // 
-            this.btn_back.Location = new System.Drawing.Point(674, 392);
+            this.btn_back.Location = new System.Drawing.Point(1021, 553);
             this.btn_back.Name = "btn_back";
-            this.btn_back.Size = new System.Drawing.Size(94, 36);
+            this.btn_back.Size = new System.Drawing.Size(115, 51);
             this.btn_back.TabIndex = 14;
             this.btn_back.Text = "Ana Sayfa";
             this.btn_back.UseVisualStyleBackColor = true;
@@ -167,7 +174,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = global::Petshop_Projesi_Otomasyon.Properties.Resources._11;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1302, 696);
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.btn_starting_update);
             this.Controls.Add(this.maskedTel);

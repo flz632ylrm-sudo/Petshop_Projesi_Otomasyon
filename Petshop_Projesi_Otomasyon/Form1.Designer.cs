@@ -34,29 +34,35 @@
             // 
             // btnMusteriIslemleri
             // 
-            this.btnMusteriIslemleri.Location = new System.Drawing.Point(80, 94);
+            this.btnMusteriIslemleri.BackColor = System.Drawing.SystemColors.Info;
+            this.btnMusteriIslemleri.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnMusteriIslemleri.Location = new System.Drawing.Point(471, 425);
             this.btnMusteriIslemleri.Name = "btnMusteriIslemleri";
-            this.btnMusteriIslemleri.Size = new System.Drawing.Size(167, 52);
+            this.btnMusteriIslemleri.Size = new System.Drawing.Size(184, 78);
             this.btnMusteriIslemleri.TabIndex = 0;
             this.btnMusteriIslemleri.Text = "MÜŞTERİ  İŞLEMLERİ";
-            this.btnMusteriIslemleri.UseVisualStyleBackColor = true;
+            this.btnMusteriIslemleri.UseVisualStyleBackColor = false;
             this.btnMusteriIslemleri.Click += new System.EventHandler(this.btnMusteriIslemleri_Click);
             // 
             // btnHayvanislemleri
             // 
-            this.btnHayvanislemleri.Location = new System.Drawing.Point(80, 173);
+            this.btnHayvanislemleri.BackColor = System.Drawing.SystemColors.Info;
+            this.btnHayvanislemleri.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnHayvanislemleri.Location = new System.Drawing.Point(684, 425);
             this.btnHayvanislemleri.Name = "btnHayvanislemleri";
-            this.btnHayvanislemleri.Size = new System.Drawing.Size(167, 49);
+            this.btnHayvanislemleri.Size = new System.Drawing.Size(184, 78);
             this.btnHayvanislemleri.TabIndex = 1;
             this.btnHayvanislemleri.Text = "HAYVAN İŞLEMLERİ";
-            this.btnHayvanislemleri.UseVisualStyleBackColor = true;
+            this.btnHayvanislemleri.UseVisualStyleBackColor = false;
             this.btnHayvanislemleri.Click += new System.EventHandler(this.btnHayvanislemleri_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = global::Petshop_Projesi_Otomasyon.Properties.Resources._1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1383, 686);
             this.Controls.Add(this.btnHayvanislemleri);
             this.Controls.Add(this.btnMusteriIslemleri);
             this.Name = "Form1";
