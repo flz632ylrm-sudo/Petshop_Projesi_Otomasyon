@@ -40,6 +40,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.maskedTel = new System.Windows.Forms.MaskedTextBox();
             this.btn_starting_update = new System.Windows.Forms.Button();
+            this.btn_back = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,9 +87,9 @@
             // 
             // btn_select
             // 
-            this.btn_select.Location = new System.Drawing.Point(218, 391);
+            this.btn_select.Location = new System.Drawing.Point(163, 391);
             this.btn_select.Name = "btn_select";
-            this.btn_select.Size = new System.Drawing.Size(75, 23);
+            this.btn_select.Size = new System.Drawing.Size(89, 37);
             this.btn_select.TabIndex = 6;
             this.btn_select.Text = "Listele";
             this.btn_select.UseVisualStyleBackColor = true;
@@ -96,9 +97,9 @@
             // 
             // btnMusteriEkle
             // 
-            this.btnMusteriEkle.Location = new System.Drawing.Point(91, 391);
+            this.btnMusteriEkle.Location = new System.Drawing.Point(42, 391);
             this.btnMusteriEkle.Name = "btnMusteriEkle";
-            this.btnMusteriEkle.Size = new System.Drawing.Size(75, 23);
+            this.btnMusteriEkle.Size = new System.Drawing.Size(86, 37);
             this.btnMusteriEkle.TabIndex = 7;
             this.btnMusteriEkle.Text = "Ekle";
             this.btnMusteriEkle.UseVisualStyleBackColor = true;
@@ -106,9 +107,9 @@
             // 
             // btn_delete
             // 
-            this.btn_delete.Location = new System.Drawing.Point(600, 391);
+            this.btn_delete.Location = new System.Drawing.Point(565, 391);
             this.btn_delete.Name = "btn_delete";
-            this.btn_delete.Size = new System.Drawing.Size(75, 23);
+            this.btn_delete.Size = new System.Drawing.Size(83, 37);
             this.btn_delete.TabIndex = 8;
             this.btn_delete.Text = "Sil";
             this.btn_delete.UseVisualStyleBackColor = true;
@@ -116,9 +117,9 @@
             // 
             // btn_update
             // 
-            this.btn_update.Location = new System.Drawing.Point(337, 391);
+            this.btn_update.Location = new System.Drawing.Point(282, 391);
             this.btn_update.Name = "btn_update";
-            this.btn_update.Size = new System.Drawing.Size(75, 23);
+            this.btn_update.Size = new System.Drawing.Size(85, 37);
             this.btn_update.TabIndex = 9;
             this.btn_update.Text = "Güncelle";
             this.btn_update.UseVisualStyleBackColor = true;
@@ -144,19 +145,30 @@
             // 
             // btn_starting_update
             // 
-            this.btn_starting_update.Location = new System.Drawing.Point(442, 391);
+            this.btn_starting_update.Location = new System.Drawing.Point(398, 391);
             this.btn_starting_update.Name = "btn_starting_update";
-            this.btn_starting_update.Size = new System.Drawing.Size(133, 23);
+            this.btn_starting_update.Size = new System.Drawing.Size(133, 37);
             this.btn_starting_update.TabIndex = 13;
             this.btn_starting_update.Text = "Güncelleme Başlat";
             this.btn_starting_update.UseVisualStyleBackColor = true;
             this.btn_starting_update.Click += new System.EventHandler(this.btn_starting_update_Click);
+            // 
+            // btn_back
+            // 
+            this.btn_back.Location = new System.Drawing.Point(674, 392);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(94, 36);
+            this.btn_back.TabIndex = 14;
+            this.btn_back.Text = "Ana Sayfa";
+            this.btn_back.UseVisualStyleBackColor = true;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // FrmMusteri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_back);
             this.Controls.Add(this.btn_starting_update);
             this.Controls.Add(this.maskedTel);
             this.Controls.Add(this.dataGridView1);
@@ -191,5 +203,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.MaskedTextBox maskedTel;
         private System.Windows.Forms.Button btn_starting_update;
+        private System.Windows.Forms.Button btn_back;
     }
 }

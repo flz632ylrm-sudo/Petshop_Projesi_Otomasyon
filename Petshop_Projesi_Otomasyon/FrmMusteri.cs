@@ -181,6 +181,9 @@ namespace Petshop_Projesi_Otomasyon
             }
         }
 
-        
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

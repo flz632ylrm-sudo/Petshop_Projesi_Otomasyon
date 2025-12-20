@@ -40,11 +40,36 @@ namespace Petshop_Projesi_Otomasyon
                     }
                
                 }
-                Thread.Sleep(1000); 
-                 FrmMusteri Musterifrm = new FrmMusteri();
+                FrmMusteri fm = new FrmMusteri();
+                fm.FormClosed += (s, args) => this.Show();
+                fm.Show();
                 this.Hide();
-                Musterifrm.ShowDialog();  
-                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata = " + ex);
+
+            }
+        }
+
+        private void btnHayvanislemleri_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    if (connection.State != ConnectionState.Open)
+                    {
+                        MessageBox.Show("1 Saniye sonra yönlendireceksiniz", "Bağlantı açık",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+
+                }
+                FrmHayvan fm = new FrmHayvan();
+                fm.FormClosed += (s, args) => this.Show();
+                fm.Show();
+                this.Hide();
             }
             catch (Exception ex)
             {
