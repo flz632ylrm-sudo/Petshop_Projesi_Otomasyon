@@ -161,13 +161,13 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(163, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(1, 0);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(869, 234);
+            this.dataGridView1.Size = new System.Drawing.Size(1371, 255);
             this.dataGridView1.TabIndex = 12;
             // 
             // btn_ekle
@@ -243,7 +243,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Petshop_Projesi_Otomasyon.Properties.Resources._11;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1187, 646);
+            this.ClientSize = new System.Drawing.Size(1372, 707);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_update);
             this.Controls.Add(this.btn_starting_update);
